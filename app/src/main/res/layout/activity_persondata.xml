@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyTaskDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dodgerblue"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人资料"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_person"
+        android:layout_margin="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="75px"
+            android:layout_height="66px"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/xiaomf"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="15dp"
+            android:text="勤劳小蜜蜂"
+            android:textSize="18sp"
+            android:textColor="@color/mediumturquoise" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hintText_black" />
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/task_id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="权限 : " />
+            <TextView
+                android:id="@+id/user_pri"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/task_id1"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="手机号 : " />
+            <TextView
+                android:id="@+id/user_phone"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/tv_score"
+                android:textSize="22dp"
+                android:text="13255678999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="居住地址 : " />
+            <TextView
+                android:id="@+id/user_addr"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/tv_addr"
+                android:textSize="22dp"
+                android:text="厦门集美后溪镇"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/modify_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="修改资料"
+        android:textColor="@color/mediumturquoise"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.tools.FullScreenVideoView
+        android:id="@+id/login_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/login_iv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_video_image"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#42ffffff">
+
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deepskyblue"
+            android:textStyle="bold"
+            android:text="环卫巡查监督APP"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:id="@+id/textView2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="36dp"
+                android:paddingTop="56dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/wode"/>
+
+            <EditText
+                android:id="@+id/login_et_username"
+                style="@style/login_editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_textview_high"
+                android:hint="@string/Username" />
+
+            <EditText
+                android:id="@+id/login_et_password"
+                style="@style/login_editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_textview_high"
+                android:hint="@string/Password"
+                android:inputType="numberPassword" />
+
+            <Button
+                android:id="@+id/login_bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_button_high"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/login_button_bg"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/allWhite"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新用户？"
+            android:id="@+id/textView"
+            android:layout_marginLeft="96dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginBottom="86dp"
+            android:textColor="@color/allWhite"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regsister"
+            android:id="@+id/zhuce"
+            android:textColor="@color/allWhite"
+            android:layout_marginRight="73dp"
+            android:layout_marginEnd="73dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

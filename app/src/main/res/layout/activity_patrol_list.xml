@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.Activity.TaskScoreActivity">
+    <RelativeLayout
+        android:id="@+id/biaoti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dodgerblue"
+        android:layout_above="@+id/recycler_view"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="任务巡逻"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_taskpatrol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/biaoti1"/>
+</LinearLayout>

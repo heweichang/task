@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_taskaddr_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:hint="点击图标选取位置"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignRight="@+id/lin_time"
+            android:layout_alignEnd="@+id/lin_time">
+
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务地点："
+            android:textSize="23dp"
+            android:layout_alignTop="@+id/et_taskaddr_add"
+            android:layout_alignLeft="@+id/lin_time"
+            android:layout_alignStart="@+id/lin_time"
+            android:id="@+id/textView3" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/lin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_taskaddr_add"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务时间："
+                android:textSize="23dp" />
+            <EditText
+                android:id="@+id/et_taskdate_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/lin_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_time"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务名："
+                android:textSize="23dp" />
+            <EditText
+                android:id="@+id/et_taskname_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/lin_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_place"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务要求："
+                android:textSize="23dp" />
+            <EditText
+                android:id="@+id/et_taskreq_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/lin_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_request"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务内容："
+                android:textSize="23dp" />
+            <EditText
+                android:id="@+id/et_taskcontent_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/get_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loc"
+            android:layout_above="@+id/get_date"
+            android:layout_toRightOf="@+id/et_taskaddr_add"
+            android:layout_toEndOf="@+id/et_taskaddr_add" />
+        <TextView
+            android:id="@+id/get_date"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rili"
+            android:layout_below="@+id/et_taskaddr_add"
+            android:layout_toEndOf="@+id/et_taskaddr_add"
+            android:layout_alignBottom="@+id/lin_time"
+            android:layout_toRightOf="@+id/et_taskaddr_add" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/sv_postdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/rlt_pd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/user_image"
+                            android:layout_width="75px"
+                            android:layout_height="66px"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/xiaomf"/>
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/user_image"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="勤劳小蜜蜂"
+                        android:textSize="18sp"
+                        android:textColor="@color/mediumturquoise"
+                         />
+                </RelativeLayout>
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/blanchedalmond" />
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/post_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="今天村子西部有个垃圾箱倒了"
+                        android:layout_below="@id/view1"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/blanchedalmond" />
+                    <ListView
+                        android:id="@+id/list_image"
+                        android:layout_below="@+id/tv_ed1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/blanchedalmond" />
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/post_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="赶紧派人过来处理下"
+                        android:layout_below="@id/list_image"/>
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/post_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="赶紧派人过来处理下"
+                        android:layout_below="@id/list_image"
+                        android:gravity="right"/>
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/blanchedalmond" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评论"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintText_black" />
+                <ListView
+                    android:id="@+id/list_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <EditText
+            android:id="@+id/post_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:gravity="top"/>
+        <Button
+            android:id="@+id/bt_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"/>
+    </LinearLayout>
+
+</RelativeLayout>

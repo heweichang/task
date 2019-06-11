@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好"
+            android:textColor="@color/mediumturquoise"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/tv_biaodian"
+            android:layout_toRightOf="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mediumturquoise"
+            android:textStyle="bold"
+            android:text=" : "
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/reply_content"
+            android:layout_toRightOf="@+id/tv_biaodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="很好"/>
+    </RelativeLayout>
+</RelativeLayout>

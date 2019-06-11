@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cyan" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/shezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sheshi" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+
+    <LinearLayout
+        android:id="@+id/line_person"
+        android:layout_margin="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.09">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/xiaomf"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="15dp"
+            android:text="勤劳小蜜蜂"
+            android:textSize="18sp"
+            android:textColor="@color/mediumturquoise"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DFDFDF"
+            android:padding="0.1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.32" >
+
+            <RelativeLayout
+                android:id="@+id/rlt_persondata"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人资料"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/jiantou3" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DFDFDF"
+            android:padding="0.1dp" />
+    <LinearLayout
+        android:id="@+id/line_mytask"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.31" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_tasking"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在进行的任务"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView"
+                android:layout_toStartOf="@+id/imageView" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/jiantou3"
+                android:id="@+id/imageView" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.28" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_tasked"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成的任务"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/jiantou3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_feedback"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.02" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <GridView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="4" >
+            </GridView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+    </LinearLayout>
+
+</RelativeLayout>

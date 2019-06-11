@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/biaoti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dodgerblue"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的任务"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlt_mytasking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="正在进行的任务"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/jiant_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/jiantou3" />
+
+            <TextView
+                android:layout_margin="3dp"
+                android:layout_toLeftOf="@id/jiant_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_mytasked"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成的任务"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/jiant_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/jiantou3" />
+
+            <TextView
+                android:layout_margin="3dp"
+                android:layout_toLeftOf="@id/jiant_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:textColor="@color/red"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:padding="0.1dp" />
+
+</LinearLayout>

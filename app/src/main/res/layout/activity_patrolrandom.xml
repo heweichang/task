@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.Activity.PostActivity"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/patrol_p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dodgerblue"
+        android:layout_above="@+id/recycler_view"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="巡逻上报"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_attribute"
+        android:layout_below="@+id/patrol_p"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/task_id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="任务单号:" />
+            <TextView
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/task_id1"
+                android:id="@+id/task_id"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/task_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="任务时间:" />
+            <TextView
+                android:id="@+id/task_date"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/task_date1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/task_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="任务:" />
+            <TextView
+                android:id="@+id/task_name"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/task_name1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/user_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="负责人:" />
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_marginLeft="30sp"
+                android:layout_toRightOf="@+id/user_name1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/task_addr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="任务地点:" />
+            <TextView
+                android:id="@+id/task_addr"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/task_addr1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/get_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loc"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/task_req1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="任务要求:" />
+            <TextView
+                android:id="@+id/task_req"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/task_req1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/task_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="任务内容:" />
+            <TextView
+                android:id="@+id/task_content"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/task_content1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ed1"
+        android:layout_below="@+id/lin_attribute"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成情况："
+        />
+
+    <ListView
+        android:id="@+id/list_image"
+        android:layout_below="@+id/tv_ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_below="@+id/list_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/task_discuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="italic"
+                    android:text="评语:" />
+                <EditText
+                    android:id="@+id/edt_discuss"
+                    android:layout_below="@+id/task_discuss"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_below="@+id/edt_discuss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:layout_gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:listitem="@layout/post_item_image" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_below="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="上传" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
